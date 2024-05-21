@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Title}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        main {
+            max-width: 800px;
+            width: 100%;
+            margin: 2rem;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .slogan {
+            font-style: italic;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{.BusinessName}}</h1>
+    </header>
+    <main>
+        <h2>Welcome to Our Business</h2>
+        <p class="slogan">{{.Slogan}}</p>
+        <p>We are committed to delivering the best services to our clients. Our team of experts is dedicated to ensuring your satisfaction and success. Thank you for choosing us!</p>
+        <section>
+            <h2>About Us</h2>
+            <p>Our company has been a leader in the industry for over a decade. We specialize in providing top-notch solutions that cater to your unique needs. Our mission is to deliver excellence and create value for our clients.</p>
+        </section>
+        <section>
+            <h2>Services</h2>
+            <p>We offer a wide range of services, including consulting, project management, and technical support. Our team is equipped with the skills and knowledge to help you achieve your goals.</p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more about our services, please don't hesitate to reach out. We are here to help you succeed.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Business. All rights reserved.</p>
+    </footer>
+</body>
+</html>
