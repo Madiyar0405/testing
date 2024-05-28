@@ -29,11 +29,14 @@ func index() http.Handler {
 	})
 }
 
-func main() {
+func startServer() error {
 	http.Handle("/", index())
 	fmt.Println("Starting server at :8080")
-	err := http.ListenAndServe(":8080", nil)
-	if err != nil {
+	return http.ListenAndServe(":8080", nil)
+}
+
+func main() {
+	if err := startServer(); err != nil {
 		fmt.Printf("Server failed to start: %v\n", err)
 	}
 }
